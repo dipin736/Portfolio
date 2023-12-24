@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <!-- ....Navbar...  -->
+    <nav id="desktop-nav">
+        <div class="logo">Dipin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Dipin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- ....Profile...  -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/dipin.jpg" alt="John Doe profile picture"   class="about-pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Dipin Karunakaran</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/dipin-karunakaran-95221b232'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/dipin736'" />
+                <img src="https://i.pinimg.com/736x/02/77/12/027712250a632b2e6f63c5466b792494.jpg" alt="My Instagram profile" class="icon"
+                    onclick="location.href='https://instagram.com/dipin_gunners007?igshid=ZDc4ODBmNjlmNQ=='" />
+                <img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-512x512-jtfg9vc0.png" alt="My Whats app profile" class="icon"
+                    onclick="location.href='https://wa.link/bvs8h0/'" />
+            </div>
+        </div>
+    </section>
+    <!-- .....About...  -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container" id="pic">
+                <dotlottie-player src="https://lottie.host/93d8c82d-0d25-4843-b16b-adae3f12f78e/AKSA5Uovuj.json"
+                background="transparent" speed="1" style="width: 500px; height: 320px;" loop autoplay
+                class="lottie-plyer"></dotlottie-player>    
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Python Fullstack Developer Trainee <small>
+                            [Developed Backend Using Python Django and flask Framework <br> Created Frontend Websites Using Html,css,javascript,jquery,bootstrap]
+                        </small></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B-Tech Mechanical Engineering <br></P>
+                            <p>CLASS XII: G.H.S.S PILICODE(COMPUTER SCIENCE)</p>
+                            <p>CLASS X: R.H.S.S NILESHWAR</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p style="justify-content: center;" id="p">
+                        I am Dipin, a highly motivated Full Stack Developer with a strong background in Mechanical Engineering. 
+                        My education and hands-on experience in Python, Django, Flask, Angular, React, HTML, CSS, and Bootstrap have equipped me to create innovative and user-centric web applications.
+                         Through personal projects and coursework, I've developed responsive and visually appealing websites. As a proactive learner and a team player with excellent communication skills,
+                         I'm eager to contribute to collaborative projects and make a positive impact as a Full Stack Developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <!-- ...Skills...  -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/b5938cb8-bf21-41d9-82f3-0b9f157b88cf/pbv4JqmvE5.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>HTML</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/7d5dbe91-fdfd-464a-8c0d-84026ddad2d9/HpkvRTCnvC.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>CSS</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/25241c07-9fe5-4405-877b-d5f613d6c4af/rZGYFnwOUZ.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="https://raw.githubusercontent.com/themedotid/bootstrap-icon/HEAD/docs/bootstrap-icon-css.png"
+                                    alt="Experience icon" class="icon" style="width: 80px; height: 80px;" />
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/f3fe43d2-17a1-421b-87fb-97efa3dcfe71/afIOdmAfTc.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>Angular</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/fc81e511-e05b-416d-a109-28e5447b4b08/7aWbOrdU9l.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>React </h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="divider">
+                    <h2 class="experience-sub-title" style="text-align: center;">Other</h2>
+                    <article>
+                        <div class="sub">
+                            <script
+                                src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                type="module"></script>
+
+                            <dotlottie-player
+                                src="https://lottie.host/e670b8c8-0c9f-4a15-88e3-4c418c63e586/8Zjw1wztEd.json"
+                                background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                autoplay></dotlottie-player>
+                            <h3 style="text-align: center;">Git</h3>
+
+                        </div>
+                    </article>
+                </div>
+                <div class="details-container" id="backend">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <dotlottie-player
+                                    src="https://lottie.host/3daab89e-34da-4646-b4ab-5ff467e0ea5d/GOff354KK5.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>Python</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-django-3550620-2970205.png"
+                                    alt="Experience icon" class="icon" style="width: 80px; height: 80px;" />
+                                <h3>Django</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="https://www.django-rest-framework.org/img/logo.png" alt="Experience icon"
+                                    class="icon" style=" padding: 20px;"  />
+                                <h3>Django REST framework</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/4de99680-7de7-4905-8ba0-07024d9edc19/iuXiIeAcA7.json"
+                                    background="transparent" speed="1" style="width: 80px; height: 80px;" loop
+                                    autoplay></dotlottie-player>
+                                <h3>MySQL</h3>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                <dotlottie-player src="https://lottie.host/0726b118-bbd5-4a6b-bd86-251537c4786f/INkairZkHN.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></dotlottie-player>
+                                <h3>mongo</h3>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <!-- .....Projects....  -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container" style="margin-top: 30px;">
+                        <img src="./assets/Safeimagekit-resized-img (3).png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Online Book Store</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipin736/Book-Store-Management-Django.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://dipinbookstore.pythonanywhere.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-24 174104.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Todo-App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipin736/Todo-List.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://todo-app-2ksd.onrender.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container" style="margin-top: 30px;">
+                        <img src="./assets/Safeimagekit-resized-img (5).png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Quiz-App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipin736/Online-Quiz-App.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dipin736/Online-Quiz-App.git'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <!-- .....contact....  -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:dipinkarunakaran6@gmail.com">dipinkarunakaran6@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/dipin-karunakaran-95221b232">LinkedIn-Dipin Karunakaran</a></p>
+            </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="data:image/png;base64,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" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="#">Call : +91-9995355761</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <p>Copyright &#169; 2023 Dipin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
